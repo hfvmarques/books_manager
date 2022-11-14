@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: books_manager_development
+  username: books_manager
+  password: books_manager
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +60,8 @@ development:
 test:
   <<: *default
   database: books_manager_test
+  username: books_manager
+  password: books_manager
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
