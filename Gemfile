@@ -60,6 +60,8 @@ group :development, :test do
   gem 'rubocop-rspec', require: false
   # Acceptance test framework
   gem 'capybara'
+
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
