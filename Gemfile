@@ -58,6 +58,8 @@ group :development, :test do
   # Linter
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
+  # Acceptance test framework
+  gem 'capybara'
 end
 
 group :development do
