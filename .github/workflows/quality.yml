@@ -51,9 +51,6 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Install postgres client dependencies
-        run: sudo apt install libpq-dev
-
       # - name: Setup nodejs
       #   uses: actions/setup-node@v1
       #   with:
@@ -72,4 +69,4 @@ jobs:
         run: bundle exec rails db:create db:migrate
 
       - name: Run tests
-        run: bundle exec rspec
+        run: bundle exec rspec spec
